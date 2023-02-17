@@ -17,7 +17,7 @@
                 placeholder="Email">
         </div>
         <div class="actions">
-            <button (click)="dialog.close()" (click)="onSend(nom.value, mail.value)">Envoyer</button>
+            <button (click)="dialog.close()" (click)="onSend(nom.value, mail.value); nom.value=''; mail.value=''">Envoyer</button>
         </div>
     </div>
 </dialog>
